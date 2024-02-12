@@ -1,0 +1,33 @@
+.registration-form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .registration-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .registration-form input[type="date"],
+  .registration-form input[type="text"],
+  .registration-form button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .registration-form .checkbox-group {
+    margin-bottom: 10px;
+  }
+  
+  .registration-form button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .registration-form button:hover {
+    background-color: #0056b3;
+  }
+  

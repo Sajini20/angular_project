@@ -1,0 +1,21 @@
+
+<router-outlet></router-outlet>
+<div class="registration-form">
+    <label for="todayDate">Today's Date:</label>
+    <input type="date" id="todayDate" [(ngModel)]="todayDate">
+  
+    <label for="supervisorName">Supervisor Name:</label>
+    <input type="text" id="supervisorName" [(ngModel)]="supervisorName">
+  
+    <label for="serviceNumber">Service Number:</label>
+    <input type="text" id="serviceNumber" [(ngModel)]="serviceNumber">
+  
+    <div class="checkbox-group">
+      <label for="sub1">Sub 1</label>
+      <input type="checkbox" id="sub1" (change)="sub1Checked = !sub1Checked">
+      
+    </div>
+  
+    <button (click)="submitForm()">Submit</button>
+  </div>
+  

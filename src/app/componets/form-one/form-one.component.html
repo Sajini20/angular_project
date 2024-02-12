@@ -1,0 +1,23 @@
+<router-outlet></router-outlet>
+
+<div class="date-picker-container">
+  <label for="date">Date:</label>
+  <input type="date" id="date" [(ngModel)]="selectedDate">
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Service ID</th>
+      <th>Manager</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of tableData">
+      <td>{{ row.name }}</td>
+      <td>{{ row.serviceId }}</td>
+      <td>{{ row.manager }}</td>
+    </tr>
+  </tbody>
+</table>
